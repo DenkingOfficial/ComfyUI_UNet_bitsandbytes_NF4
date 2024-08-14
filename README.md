@@ -6,6 +6,14 @@ NF4 UNet can be obtained [on HuggingFace](https://huggingface.co/duuuuuuuden/flu
 
 Extension adds UNETLoaderNF4 node (in advanced/loaders category)
 
+Requires installing bitsandbytes.
+
+Installation:
+
+* Open terminal in ComfyUI/custom_nodes and use this command to clone repo:
+
+    ```git clone https://github.com/DenkingOfficial/ComfyUI_UNet_bitsandbytes_NF4.git```
+
 Original README:
 
 Now on the [manager](https://github.com/ltdrdata/ComfyUI-Manager) for easy installation. Make sure to select Channel:dev in the ComfyUI manager menu or install via git url.
