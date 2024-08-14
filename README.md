@@ -1,18 +1,20 @@
-A small modification of the [ComfyUI_bitsandbytes_NF4](https://github.com/comfyanonymous/ComfyUI_bitsandbytes_NF4) extension that allows loading UNet separately from text encoders and VAE
+A small modification of the [ComfyUI_bitsandbytes_NF4](https://github.com/comfyanonymous/ComfyUI_bitsandbytes_NF4) extension that allows loading UNet separately from text encoders and VAE.
 
-This may be useful for users who have already downloaded T5, CLIP and VAE to save disk space
+This may be useful for users who have already downloaded T5, CLIP and VAE to save disk space.
 
-NF4 UNet can be obtained [on HuggingFace](https://huggingface.co/duuuuuuuden/flux1-nf4-unet)
+Extension adds UNETLoaderNF4 node (in advanced/loaders category).
 
-Extension adds UNETLoaderNF4 node (in advanced/loaders category)
+NF4 UNet can be obtained [on HuggingFace](https://huggingface.co/duuuuuuuden/flux1-nf4-unet). Download UNet and place it in `ComfyUI/models/unet`.
 
 Requires installing bitsandbytes.
 
 Installation:
 
-* Open terminal in ComfyUI/custom_nodes and use this command to clone repo:
+* Open terminal in `ComfyUI/custom_nodes` and use this command to clone repo:
 
     ```git clone https://github.com/DenkingOfficial/ComfyUI_UNet_bitsandbytes_NF4.git```
+
+[Workflow](https://files.catbox.moe/d5ov4n.png)
 
 Original README:
 
