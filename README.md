@@ -4,7 +4,12 @@ This may be useful for users who have already downloaded T5, CLIP and VAE to sav
 
 Extension adds UNETLoaderNF4 node (in advanced/loaders category).
 
-NF4 UNet can be obtained [on HuggingFace](https://huggingface.co/duuuuuuuden/flux1-nf4-unet). Download UNet and place it in `ComfyUI/models/unet`.
+NF4 UNets can be obtained [on HuggingFace](https://huggingface.co/duuuuuuuden/flux1-nf4-unet). Download UNet and place it in `ComfyUI/models/unet`.
+
+UNets available:
+* [flux1-dev-bnb-nf4-unet](https://huggingface.co/duuuuuuuden/flux1-nf4-unet/blob/main/flux1-dev-bnb-nf4-unet.safetensors)
+* [flux1-dev-bnb-nf4-v2-unet](https://huggingface.co/duuuuuuuden/flux1-nf4-unet/blob/main/flux1-dev-bnb-nf4-v2-unet.safetensors)
+* [flux1-schnell-bnb-nf4-unet](https://huggingface.co/duuuuuuuden/flux1-nf4-unet/blob/main/flux1-schnell-bnb-nf4-unet.safetensors)
 
 Requires installing bitsandbytes.
 
