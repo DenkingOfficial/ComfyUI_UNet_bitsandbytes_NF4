@@ -10,6 +10,7 @@ UNets available:
 * [flux1-dev-bnb-nf4-unet](https://huggingface.co/duuuuuuuden/flux1-nf4-unet/blob/main/flux1-dev-bnb-nf4-unet.safetensors)
 * [flux1-dev-bnb-nf4-v2-unet](https://huggingface.co/duuuuuuuden/flux1-nf4-unet/blob/main/flux1-dev-bnb-nf4-v2-unet.safetensors)
 * [flux1-schnell-bnb-nf4-unet](https://huggingface.co/duuuuuuuden/flux1-nf4-unet/blob/main/flux1-schnell-bnb-nf4-unet.safetensors)
+* [flux1-schnell-bnb-nf4-v2-unet](https://huggingface.co/duuuuuuuden/flux1-nf4-unet/blob/main/flux1-schnell-bnb-nf4-v2-unet.safetensors)
 
 Requires installing bitsandbytes.
 
