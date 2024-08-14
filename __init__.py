@@ -1,10 +1,6 @@
-#shamelessly taken from forge
+#shamelessly taken from comfyanonymous who shamelessly took it from forge
 
-import nodes
 import folder_paths
-
-import bitsandbytes
-
 import torch
 import bitsandbytes as bnb
 
@@ -163,22 +159,21 @@ class OPS(comfy.ops.manual_cast):
                     return functional_linear_4bits(x, weight, bias)
 
 
-class CheckpointLoaderNF4:
+class UNETLoaderNF4:
     @classmethod
     def INPUT_TYPES(s):
-        return {"required": { "ckpt_name": (folder_paths.get_filename_list("checkpoints"), ),
+        return {"required": { "unet_name": (folder_paths.get_filename_list("unet"), ),
                              }}
-    RETURN_TYPES = ("MODEL", "CLIP", "VAE")
-    FUNCTION = "load_checkpoint"
+    RETURN_TYPES = ("MODEL",)
+    FUNCTION = "load_unet"
 
-    CATEGORY = "loaders"
+    CATEGORY = "advanced/loaders"
 
-    def load_checkpoint(self, ckpt_name):
-        ckpt_path = folder_paths.get_full_path("checkpoints", ckpt_name)
-        out = comfy.sd.load_checkpoint_guess_config(ckpt_path, output_vae=True, output_clip=True, embedding_directory=folder_paths.get_folder_paths("embeddings"), model_options={"custom_operations": OPS})
-        return out[:3]
+    def load_unet(self, unet_name):
+        unet_path = folder_paths.get_full_path("unet", unet_name)
+        model = comfy.sd.load_diffusion_model(unet_path, model_options={"custom_operations": OPS})
+        return (model,)
 
 NODE_CLASS_MAPPINGS = {
-    "CheckpointLoaderNF4": CheckpointLoaderNF4,
+    "UNETLoaderNF4": UNETLoaderNF4,
 }
-
