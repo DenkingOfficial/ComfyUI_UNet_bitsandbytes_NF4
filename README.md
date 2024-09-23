@@ -1,12 +1,12 @@
-A small modification of the [ComfyUI_bitsandbytes_NF4](https://github.com/comfyanonymous/ComfyUI_bitsandbytes_NF4) extension that allows loading UNet separately from text encoders and VAE.
+A small modification of the [ComfyUI_bitsandbytes_NF4](https://github.com/comfyanonymous/ComfyUI_bitsandbytes_NF4) extension that allows loading Diffusion Models separately from text encoders and VAE.
 
 This may be useful for users who have already downloaded T5, CLIP and VAE to save disk space.
 
 Extension adds UNETLoaderNF4 node (in advanced/loaders category).
 
-NF4 UNets can be obtained [on HuggingFace](https://huggingface.co/duuuuuuuden/flux1-nf4-unet). Download UNet and place it in `ComfyUI/models/unet`.
+NF4 Diffusion Models can be obtained [on HuggingFace](https://huggingface.co/duuuuuuuden/flux1-nf4-unet). Download Diffusion Model and place it in `ComfyUI/models/unet`.
 
-UNets available:
+Diffusion Models available:
 * [flux1-dev-bnb-nf4-unet](https://huggingface.co/duuuuuuuden/flux1-nf4-unet/blob/main/flux1-dev-bnb-nf4-unet.safetensors)
 * [flux1-dev-bnb-nf4-v2-unet](https://huggingface.co/duuuuuuuden/flux1-nf4-unet/blob/main/flux1-dev-bnb-nf4-v2-unet.safetensors)
 * [flux1-schnell-bnb-nf4-unet](https://huggingface.co/duuuuuuuden/flux1-nf4-unet/blob/main/flux1-schnell-bnb-nf4-unet.safetensors)
